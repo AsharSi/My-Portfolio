@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
+body {
+    background-color: bisque;
+    font-family: 'fira code';
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 100px;
+}
+
+header {
+    background-color: Black;
+    color: #ddd;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.heading {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo img {
+    height: auto;
+    max-width: 100%;
+}
+
+.about {
+    width: 50%;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.society {
+    text-decoration: none;
+    color: black;
+}
+
+.society :hover {
+    text-decoration: underline;
+}
+
+#skills ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#skills li {
+    line-height: 2.5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+form div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-family: 'Fira Code';
+    border: 2px groove #aaaaaa;
+    border-radius: 4px;
+    display: block;
+    width: 581.27px;
+    background-color: #ddd;
+    height: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+#submit {
+    background-color: black;
+    color: #ddd;
+    border: none;
+}
+
+#submit :hover {
+    color: yellow;
+    scale: 1.04;
+}
+
+footer {
+    height: 55px;
+    background-color: black;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+
+    }
+
+    .photo {
+        width: 90%;
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    form div {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+    }
+
+    footer {
+        height: 80px;
+        flex-direction: column;
+    }
+}
