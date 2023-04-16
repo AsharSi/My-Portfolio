@@ -52,20 +52,25 @@
         <section id="contact">
             <h2 class="heading">CONTACT</h2>
             <form action="backened.php">
-                <div>
-                    <label for="name">
-                        <strong>Name:</strong></label><br>
-                    <input type="text" name="Name" id="name">
+                <div id="box-1">
+                    <label for="name"><strong>Name:</strong></label>
+                    <div class="formbox">
+                        <input type="text" name="Name" id="name">
+                    </div>
                 </div>
-                <div>
-                    <label for="emailid"><strong>Email Id:</strong></label><br>
-                    <input type="email" name="emailid" id="emailid">
+                <div id="box-2">
+                    <label for="emailid"><strong>Email Id:</strong></label>
+                    <div class="formbox">
+                        <input type="email" name="emailid" id="emailid">
+                    </div>
                 </div>
-                <div>
-                    <label for="message"><strong>Message:</strong></label><br>
-                    <textarea name="message" id="message" rows="1"></textarea>
+                <div id="box-3">
+                    <label for="message"><strong>Message:</strong></label>
+                    <div class="formbox">
+                        <textarea name="message" id="message" rows="1"></textarea>
+                    </div>
                 </div>
-                <div>
+                <div id="box-submit">
                     <input type="submit" id="submit">
                 </div>
             </form>

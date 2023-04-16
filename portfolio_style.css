@@ -149,6 +149,15 @@ textarea {
     font-weight: bold;
 }
 
+.formbox :hover {
+    background-color: #ccc;
+}
+
+#box-submit :hover{
+    cursor: pointer;
+    border: 2px solid wheat
+}
+
 #submit {
     background-color: black;
     color: #ddd;
