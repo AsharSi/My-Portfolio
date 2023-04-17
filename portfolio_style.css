@@ -155,18 +155,13 @@ textarea {
 
 #box-submit :hover{
     cursor: pointer;
-    border: 2px solid wheat
+    scale: 1.01;
 }
 
 #submit {
     background-color: black;
     color: #ddd;
     border: none;
-}
-
-#submit :hover {
-    color: yellow;
-    scale: 1.04;
 }
 
 footer {
