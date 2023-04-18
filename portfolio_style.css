@@ -39,6 +39,8 @@ header {
 nav ul {
     display: flex;
     list-style: none;
+    font-size: large;
+    font-weight: bold;
 }
 
 nav li {
@@ -50,8 +52,11 @@ nav a {
     color: #ddd;
 }
 
-nav a:hover {
+.navbar-list ul :hover {
+    scale: 1.1;
+    transition: 0.3s;
     text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 main {
@@ -156,21 +161,46 @@ textarea {
 #box-submit :hover{
     cursor: pointer;
     scale: 1.005;
+    transition: 0.3s;
 }
 
 #submit {
+    margin-top: 40px;
     background-color: black;
     color: #ddd;
     border: none;
 }
 
 footer {
-    height: 55px;
+    font-size: large;
     background-color: black;
     color: #ddd;
+}
+
+footer .footercontainer {
+    margin: 0px 20px;
+    height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+.weblinks {
+    display: flex;
+    margin-left: -30px;
+}
+
+.footercontainer .weblinks a{
+    padding: 0px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.footercontainer .weblinks a :hover {
+    scale: 1.3;
+    color: aqua;
+    transition: 0.4s;
 }
 
 @media screen and (max-width: 767px) {
