@@ -115,6 +115,7 @@ section {
 
 .society :hover {
     text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 #skills ul {
@@ -233,7 +234,7 @@ footer {
   
   .weblinks a {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: white;
     transition: color 0.2s ease-in-out;
   }
