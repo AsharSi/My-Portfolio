@@ -94,7 +94,7 @@ section {
 .photo img {
     height: auto;
     max-width: 100%;
-    box-shadow: #666 0px 0px 4px 2px;
+    box-shadow: #bbbbbb 0px 0px 4px 2px;
 }
 
 .about {
