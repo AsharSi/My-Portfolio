@@ -2,12 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid #007bff */
+    border: 1px solid transparent;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 120px;
 }
 
 body {
@@ -16,17 +15,11 @@ body {
     font-family: 'Raleway', monospace;
     font-size: 16px;
     line-height: 1.5;
-    padding-top: 100px;
 }
 
-#top_heading {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-}
 header {
-    padding: 10px 50px;
+    background-color: rgb(32,31,36);
+    padding: 10px 40px;
 
     display: flex;
     justify-content: space-between;
@@ -39,20 +32,26 @@ header {
     z-index: 1000;
 }
 
+.header-heading {
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
 nav ul {
     display: flex;
     list-style: none;
-    font-size: large;
+    font-size: 18px;
     font-weight: bold;
 }
 
 nav li {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 nav a {
     text-decoration: none;
-    color: #ddd;
+    color: rgb(255, 255, 255);
 }
 
 .navbar-list ul :hover {
@@ -65,21 +64,37 @@ nav a {
 
 #main {
     width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0px auto;
 }
 
 .section {
     height: 100vh;
-    display: grid;
-    position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutus {
+    flex-direction: column;
+}
+
+#skills {
+    flex-direction: column;
+}
+
+#contact {
+    flex-direction: column;
 }
 
 .section-heading {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
+}
+
+.container {
+    font-size: 20px;
+    text-align: center;
 }
 
 /* .photo {
@@ -109,7 +124,7 @@ nav a {
 }
 
 .society :hover {
-    color: #efefef;
+    color: rgb(195, 182, 67);
     text-decoration: underline;
     text-underline-offset: 4px;
 }
