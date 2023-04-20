@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* border: 1px solid #007bff */
 }
 
 html {
@@ -10,20 +11,22 @@ html {
 }
 
 body {
-    background-color: bisque;
-    font-family: 'Fira code', monospace;
+    background-color: rgb(31,31,36);
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', monospace;
     font-size: 16px;
     line-height: 1.5;
     padding-top: 100px;
 }
 
+#top_heading {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
 header {
-    background-color: Black;
-    color: #ddd;
-
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 100px;
+    padding: 10px 50px;
 
     display: flex;
     justify-content: space-between;
@@ -32,8 +35,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 9999;
+    width: 100vw;
+    z-index: 1000;
 }
 
 nav ul {
@@ -60,31 +63,26 @@ nav a {
     color: #007bff;
 }
 
-main {
-    padding: 20px
-}
-
-section {
+#main {
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 120px;
-}
-
-.heading {
-    height: 100px;
-    display: flex;
-    align-items: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
-.photo {
+.section {
+    height: 100vh;
+    display: grid;
+    position: center;
+}
+
+.section-heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* .photo {
     width: 50%;
     display: flex;
     align-items: center;
@@ -95,83 +93,33 @@ section {
     height: auto;
     max-width: 100%;
     box-shadow: #bbbbbb 0px 0px 4px 2px;
-}
+} */
 
 .about {
-    width: 50%;
-    padding: 20px;
+}
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    text-align: center;
+.about-info
+{
+    padding: 10px 0px;
 }
 
 .society {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .society :hover {
+    color: #efefef;
     text-decoration: underline;
     text-underline-offset: 4px;
 }
 
 #skills ul {
     list-style-type: none;
-    text-align: center;
 }
 
 #skills li {
     line-height: 2.5;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-}
-
-form div {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input,
-textarea {
-    padding: 10px;
-    font-family: 'Fira Code';
-    border: 2px groove #aaaaaa;
-    border-radius: 4px;
-    display: block;
-    width: 581.27px;
-    background-color: #ddd;
-    height: 40px;
-    color: black;
-    font-weight: bold;
-}
-
-.formbox :hover {
-    background-color: #ccc;
-}
-
-#box-submit :hover{
-    cursor: pointer;
-    scale: 1.005;
-    transition: 0.3s;
-}
-
-#submit {
-    margin-top: 40px;
-    background-color: black;
-    color: #ddd;
-    border: none;
 }
 /* 
 footer {
@@ -206,8 +154,6 @@ footer .footercontainer {
     transition: 0.4s;
 } */
 footer {
-    background-color: black;
-    color: white;
     padding: 20px;
     text-align: center;
   }
@@ -217,9 +163,8 @@ footer {
     margin: 0 auto;
   }
   
-  h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+  h2 {
+    margin-bottom: 20px;
   }
   
   .weblinks {

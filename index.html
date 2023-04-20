@@ -12,37 +12,39 @@
 </head>
 
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav class="navbar-list">
-            <ul>
-                <li><a href="#aboutus">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="aboutus">
-            <h2 class="heading">ABOUT ME</h2>
-
+    <div id="top_heading">
+        <header>
+            <h1>ASHUTOSH KR SINGH</h1>
+            <nav class="navbar-list">
+                <ul>
+                    <li><a href="#aboutus">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main">
+        <div id="aboutus" class="section">
+            <div class="section-heading">
+                Hello, I'm Ashutosh
+            </div>
             <div class="container">
-                <div class="photo">
+                <!-- <div class="photo">
                     <img src="AsharSi.jpg" alt="Photo of Asharsi">
-                </div>
+                </div> -->
                 <div class="about">
-                    <p>Hello</p>
-                    <p>I am <strong>Ashutosh Kr Singh</strong>, a <strong>1st year</strong> UG student at the department
+                    <div class="about-info">I am a <strong>1st year</strong> UG student at the department
                         of <a href="http://www.ee.iitkgp.ac.in/" class="society" target="_blank"><strong>Electrical
                                 Engineering</a></strong>, <a href="http://www.iitkgp.ac.in/" class="society"
-                            target="_blank"><strong>IIT Kharagpur</a></strong> enrolled in its 4 year B.Tech course.</p>
-                    <p>I am also <strong>Junior Executive Member</strong> at <a href="https://www.gyws.org/"
-                            class="society" target="_blank"><strong>Gopali Youth Welfare Society</strong></a>.</p>
+                            target="_blank"><strong>IIT Kharagpur</a></strong> enrolled in its 4 year B.Tech course.</div>
+                    <div class="about-info">I am also <strong>Junior Executive Member</strong> at <a href="https://www.gyws.org/"
+                            class="society" target="_blank"><strong>Gopali Youth Welfare Society</strong></a>.</div>
                 </div>
             </div>
-        </section>
-        <section id="skills">
-            <h2 class="heading">SKILLS</h2>
+        </div>
+        <div id="skills" class="section">
+            <h2 class="section-heading">SKILLS</h2>
             <ul>
                 <li>C (Programming Language)</li>
                 <li>HTML</li>
@@ -50,9 +52,9 @@
                 <li>Chess (1100+ rating)</li>
                 <li>Web Development(Frontend Basics)</li>
             </ul>
-        </section>
-        <section id="contact">
-            <h2 class="heading">CONTACT</h2>
+        </div>
+        <div id="contact" class="section">
+            <h2 class="section-heading">CONTACT</h2>
             <form action="backened.php">
                 <div id="box-1">
                     <label for="name"><strong>Name:</strong></label>
@@ -76,8 +78,8 @@
                     <input type="submit" id="submit">
                 </div>
             </form>
-        </section>
-    </main>
+        </div>
+    </div id="main">
     <!-- <footer>
         <div class="footercontainer">
             <div>All Rights Reserved </div>
@@ -100,7 +102,7 @@
     </footer> -->
     <footer>
         <div class="footer-wrapper">
-          <h3>Connect with me</h3>
+          <h2>Let's be internet BFFs</h2>
           <div class="weblinks">
             <div>
               <a href="https://www.facebook.com/profile.php?id=100085671729571" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
