@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>My Portfolio</title>
-    
+
     <link href="https://fonts.googleapis.com/css?family=Fira+Code" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <link rel="stylesheet" href="portfolio_style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/gh/cotton123236/cottonjs@latest/lib/cotton.min.js"></script> -->
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -32,11 +33,14 @@
             </div>
             <div class="container">
                 <div class="about">
-                    <div class="about-info">I am a <span>1st year</span> UG student at the department
-                        of <a href="http://www.ee.iitkgp.ac.in/" class="society" target="_blank"><span>Electrical Engineering</span></a>, <a href="http://www.iitkgp.ac.in/" class="society" target="_blank"><span>IIT Kharagpur</span></a>.
+                    <div class="about-info">I am a 1st year UG student at the department
+                        of <a href="http://www.ee.iitkgp.ac.in/" class="society" target="_blank"><span>Electrical
+                                Engineering</span></a>, <a href="http://www.iitkgp.ac.in/" class="society"
+                            target="_blank"><span>IIT Kharagpur</span></a>.
                     </div>
                     <div class="about-info">
-                        I am also <span>Junior Executive Member</span> at <a href="https://www.gyws.org/" class="society" target="_blank"><span>Gopali Youth Welfare Society</span></a>.
+                        I am also <span>Junior Executive Member</span> at <a href="https://www.gyws.org/"
+                            class="society" target="_blank"><span>Gopali Youth Welfare Society</span></a>.
                     </div>
                 </div>
             </div>
@@ -52,32 +56,32 @@
             </ul>
         </div>
         <div id="contact" class="section">
-            <h2 class="section-heading">CONTACT</h2>
+            <h2 class="section-heading">CONTACT ME</h2>
             <form action="backened.php">
-                <div id="box-1">
-                    <label for="name"><strong>Name:</strong></label>
-                    <div class="formbox">
-                        <input type="text" name="Name" id="name">
+                <div id="box-1" class="form-section">
+                    <div class="name-email">
+                        <input type="text" name="Name" id="name" placeholder="NAME">
+                    </div>
+                    <div class="name-email">
+                        <input type="email" name="emailid" id="emailid" placeholder="EMAIL-ID" required>
                     </div>
                 </div>
-                <div id="box-2">
-                    <label for="emailid"><strong>Email Id:</strong></label>
-                    <div class="formbox">
-                        <input type="email" name="emailid" id="emailid">
+                <div id="box-2" class="form-section">
+                    <div class="form-subject">
+                        <input type="subject" id="subject" placeholder="SUBJECT"> 
                     </div>
                 </div>
-                <div id="box-3">
-                    <label for="message"><strong>Message:</strong></label>
-                    <div class="formbox">
-                        <textarea name="message" id="message" rows="1"></textarea>
+                <div id="box-3" class="form-section">
+                    <div class="form-message">
+                        <textarea name="message" id="message" placeholder="MESSAGE" required></textarea>
                     </div>
                 </div>
                 <div id="box-submit">
-                    <input type="submit" id="submit">
+                    <input type="submit" id="submit" value="SEND MESSAGE">
                 </div>
             </form>
         </div>
-    </div id="main">
+    </div id="main">    
     <!-- <footer>
         <div class="footercontainer">
             <div>All Rights Reserved </div>
@@ -111,6 +115,10 @@
                             class="fa fa-linkedin"></i></a>
                 </div>
                 <div>
+                    <a href="https://twitter.com/Asharsi_NP" target="_blank" rel="noopener"><i
+                            class="fa fa-twitter"></i></a>
+                </div>
+                <div>
                     <a href="https://github.com/AsharSi" target="_blank" rel="noopener"><i class="fa fa-github"></i></a>
                 </div>
                 <div>
@@ -122,6 +130,11 @@
         </div>
     </footer>
 
+    <!-- 
+    <div id="ball"></div>
+    <div id="circle"></div>
+
+    <a class="pill-btn" href="#">MODEL</a> -->
 
 </body>
 
