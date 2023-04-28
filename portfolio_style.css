@@ -215,11 +215,8 @@ form {
     font-size: 1.05em;
     font-weight: 600;
     font-family: 'Raleway', monospace;
+    resize: none;
 }
-
-#box-submit {
-    
-}       
 
 #submit {
     margin-top: 25px;
